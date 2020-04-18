@@ -1,0 +1,1 @@
+# github-actions-web-page-screenshot-example
