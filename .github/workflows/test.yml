@@ -1,0 +1,14 @@
+name: Test
+on:
+  push: {}
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - run: |
+        chrome --headless --screenshot=screenshot.png https://github.com/dtinth
+    - uses: actions/upload-artifact@v1
+      with:
+        name: screenshot
+        path: screenshot.png
