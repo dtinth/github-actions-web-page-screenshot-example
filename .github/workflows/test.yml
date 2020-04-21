@@ -7,7 +7,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - run: |
-        google-chrome --headless --screenshot=screenshot.png https://github.com/dtinth
+        google-chrome --headless --screenshot=screenshot.png --window-size=1280,720 https://github.com/dtinth
     - uses: actions/upload-artifact@v1
       with:
         name: screenshot
